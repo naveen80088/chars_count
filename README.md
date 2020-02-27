@@ -22,7 +22,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+obj = CharsCount::Chars.new
+
+charhash = obj.count("example")
+
+## Output for above example
+
+	it returns output in hash format
+
+charhash => [["a", 1], ["e", 2], ["l", 1], ["m", 1], ["p", 1], ["x", 1]]
+
+	or You can write code as
+
+
+	charhash.sort.each do |key, value| 
+		puts "#{key} is #{value}"
+	end
+
+	output:
+			a is 1
+			e is 2
+			l is 1
+			m is 1
+			p is 1
+			x is 1
 
 ## Development
 
