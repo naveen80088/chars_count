@@ -23,18 +23,18 @@ Or install it yourself as:
 
 obj = CharsCount::Chars.new
 
-charhash = obj.count("example")
+string_count = obj.count("example")
 
 ## Output for above example
 
-	it returns output in hash format
+	it returns output as
 
-charhash => [["a", 1], ["e", 2], ["l", 1], ["m", 1], ["p", 1], ["x", 1]]
+string_count = [["a", 1], ["e", 2], ["l", 1], ["m", 1], ["p", 1], ["x", 1]]
 
 	or You can write code as
 
 
-	charhash.sort.each do |key, value| 
+	string_count.each do |key, value| 
 		puts "#{key} is #{value}"
 	end
 
